@@ -1,6 +1,6 @@
 const peopleOnBus = (arr) => {
     if (arr.length === 2) {
-        if (arr[0] > arr[1]) {
+        if (arr[0] >= arr[1]) {
             let remaininPersons = arr[0] - arr[1];
             return remaininPersons;
         } else {
@@ -11,5 +11,5 @@ const peopleOnBus = (arr) => {
         return 'noway it could happen!';
     }
 }
-let arr = [2, 3];
+let arr = [3, 3];
 console.log(peopleOnBus(arr));
